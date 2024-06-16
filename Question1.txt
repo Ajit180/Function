@@ -1,0 +1,45 @@
+Q1. Create an arrow function called square that takes a number as an argument and returns its square. Use
+the arrow function to calculate the square of a given number and display the result.
+
+Solution:
+
+
+Sure! Here's how you can create an arrow function called `square` that takes a number as an argument and returns its square. Additionally, the code will calculate the square of a given number and display the result.
+
+### Arrow Function for Squaring a Number
+```javascript
+const square = (num) => num * num;
+```
+
+### Using the Arrow Function
+```javascript
+let number = 5; // You can change this number to any value you want to test
+let result = square(number);
+console.log(`The square of ${number} is ${result}`);
+```
+
+### Explanation
+1. Arrow Function Definition:
+    - `const square = (num) => num * num;` defines an arrow function `square` that takes one parameter `num` and returns the value of `num` multiplied by itself.
+
+2. Using the Arrow Function:
+    - `let number = 5;` initializes a variable `number` with the value 5.
+    - `let result = square(number);` calls the `square` function with `number` as an argument and stores the result in the variable `result`.
+    - `console.log(`The square of ${number} is ${result}`);` outputs the result to the console.
+
+### Complete Code Example
+```javascript
+const square = (num) => num * num;
+
+let number = 5; // You can change this number to any value you want to test
+let result = square(number);
+console.log(`The square of ${number} is ${result}`);
+```
+
+### Output
+For `number = 5`, the output will be:
+```
+The square of 5 is 25
+```
+
+You can change the value of `number` to test the function with different inputs and see the corresponding squared values.

@@ -1,0 +1,68 @@
+Question 1: Create an IIFE (Immediately Invoked Function Expression) that calculates the square of a number and  immediately displays the result.
+
+Solutiion: 
+
+    An IIFE (Immediately Invoked Function Expression) is a function that is defined and immediately executed. Here's how you can create an IIFE in JavaScript that calculates the square of a number and immediately displays the result:
+
+### Syntax of IIFE
+The general syntax of an IIFE is:
+
+javascript
+(function() {
+    // function body
+})();
+
+
+You can also pass parameters to an IIFE:
+
+javascript
+(function(param) {
+    // function body using param
+})(argument);
+
+
+### Example IIFE to Calculate the Square of a Number
+
+Here's an example where we calculate the square of a number (e.g., 5) and immediately display the result:
+
+javascript
+(function(number) {
+    let square = number * number;
+    console.log(`The square of ${number} is ${square}.`);
+})(5);
+
+
+### Explanation
+1. **IIFE Declaration and Invocation**:
+    - `(function(number) { ... })(5);` defines an anonymous function that takes one parameter `number` and immediately invokes it with the argument `5`.
+
+2. **Calculating the Square**:
+    - Inside the IIFE, the square of the `number` is calculated using `number * number` and stored in the variable `square`.
+
+3. **Displaying the Result**:
+    - The result is then displayed using `console.log`.
+
+### Running the Code
+
+When you run the above code, the following output will be immediately displayed:
+
+
+The square of 5 is 25.
+
+
+You can change the argument `5` to any other number to calculate and display its square immediately. For example:
+
+javascript
+(function(number) {
+    let square = number * number;
+    console.log(`The square of ${number} is ${square}.`);
+})(7);
+
+
+This will output:
+
+
+The square of 7 is 49.
+
+
+This way, the IIFE allows you to perform the calculation and display the result immediately.
